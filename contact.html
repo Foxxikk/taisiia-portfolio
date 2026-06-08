@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — Taisiia Pokrovska</title>
+<meta name="description" content="Get in touch with Taisiia Pokrovska for AI creative work — email, Telegram or Instagram." />
+<meta property="og:title" content="Contact — Taisiia Pokrovska" />
+<meta property="og:image" content="og-image.svg" />
+<meta name="theme-color" content="#FDFAF8" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body data-page="contact">
+<header id="site-header"></header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap reveal">
+      <span class="eyebrow" data-i18n="cp.eyebrow">✦ Contact</span>
+      <h1 data-i18n-html="cp.title">Let’s create something <em>beautiful</em></h1>
+      <p data-i18n="cp.lead">Tell me about your brand, campaign or idea. Fill in the form or reach out directly — I usually reply within a day.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:24px">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div class="reveal">
+          <h2 style="font-size:1.5rem;margin-bottom:22px" data-i18n="cp.reach">Reach me directly</h2>
+          <div class="contact-card">
+            <a class="contact-row" href="mailto:hello@taisiiapokrovska.com">
+              <div class="ic">✉</div><div><div class="lbl" data-i18n="cta.email">Email me</div><div class="val">hello@taisiiapokrovska.com</div></div>
+            </a>
+            <a class="contact-row" href="https://t.me/" target="_blank" rel="noopener">
+              <div class="ic">✈</div><div><div class="lbl" data-i18n="cta.tg">Telegram</div><div class="val">@taisiiapokrovska</div></div>
+            </a>
+            <a class="contact-row" href="https://instagram.com/" target="_blank" rel="noopener">
+              <div class="ic">◎</div><div><div class="lbl" data-i18n="cta.ig">Instagram</div><div class="val">@taisiia.creates</div></div>
+            </a>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <h2 style="font-size:1.5rem;margin-bottom:22px" data-i18n="cp.formt">Send a message</h2>
+          <form id="contactForm">
+            <div class="field">
+              <label for="name" data-i18n="fm.name">Your name</label>
+              <input id="name" name="name" type="text" required data-i18n-ph="fm.name" />
+            </div>
+            <div class="field">
+              <label for="email" data-i18n="fm.email">Email</label>
+              <input id="email" name="email" type="email" required data-i18n-ph="fm.email" />
+            </div>
+            <div class="field">
+              <label for="message" data-i18n="fm.msg">Tell me about your project</label>
+              <textarea id="message" name="message" required data-i18n-ph="fm.msg"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" data-i18n="fm.send">Send message</button>
+            <p class="form-note" data-i18n="fm.note"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="site-footer"></footer>
+<script src="assets/app.js"></script>
+</body>
+</html>
