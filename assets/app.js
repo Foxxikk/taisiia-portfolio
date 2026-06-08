@@ -534,8 +534,13 @@ function buildFilters(){
 
 /* ---------- Reveal ---------- */
 function reveal(){
-  const io=new IntersectionObserver((es)=>{es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });},{threshold:.12});
-  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  const els=[...document.querySelectorAll('.reveal')];
+  if(!('IntersectionObserver' in window)){ els.forEach(e=>e.classList.add('in')); return; }
+  // threshold:0 + rootMargin so tall elements (e.g. single-column grids on mobile) always reveal
+  const io=new IntersectionObserver((es)=>{es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });},{threshold:0, rootMargin:'0px 0px -8% 0px'});
+  els.forEach(el=>io.observe(el));
+  // safety fallback: if anything is still hidden shortly after load, reveal it
+  setTimeout(()=>{ els.forEach(e=>{ const r=e.getBoundingClientRect(); if(r.top < window.innerHeight*1.2) e.classList.add('in'); }); }, 1200);
 }
 
 /* ---------- Init ---------- */
