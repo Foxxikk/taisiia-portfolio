@@ -94,7 +94,35 @@ const I18N = {
     'cp.reach':'Reach me directly','cp.formt':'Send a message',
     'fm.name':'Your name','fm.email':'Email','fm.msg':'Tell me about your project','fm.send':'Send message',
     'fm.note':'This demo form opens your email client. For a live site, connect it to your preferred form service.',
-    'modal.note':'Video preview — replace with the real showreel clip on launch.'
+    'modal.note':'Video preview — replace with the real showreel clip on launch.',
+    'wk.about':'About this project',
+    'i1.desc':'AI product visual for a botanical face serum — a styled flat-lay with pressed roses and crystals, generated and retouched for a soft-luxury skincare brand.',
+    'i2.desc':'Hero shot for a rose-infused elixir, built around a lush garden palette of berries and stone-fruit to signal a natural, premium formula.',
+    'i3.desc':'Editorial still life pairing the serum with vintage mirrors and silk — an on-brand key visual for a boutique skincare launch.',
+    'i4.desc':'Moody product shot on wet slate, contrasting cool stone with warm botanicals to give the line a spa-grade, sensory feel.',
+    'i5.desc':'Full social ad concept for a beauty drop — a scroll-stopping floral key frame designed for paid Instagram and Telegram placements.',
+    'i6.desc':'Fragrance ad creative in cool blues — a clean, conversion-focused composition built for performance campaigns.',
+    'i7.desc':'AI interior visualization of a crimson lounge — generated on demand to explore mood and palette for a hospitality concept.',
+    'i8.desc':'Virtual model photoshoot in a rosé palette — a full editorial look produced entirely with AI, with no studio required.',
+    'i9.desc':'On-brand infographic translating product data into an elegant, easy-to-read visual for a beauty maison.',
+    'i10.desc':'AI brand portrait with a painterly, editorial finish — crafted to give a founder a distinctive, premium presence.',
+    'i11.desc':'Low-key portrait study exploring light and mood — part of a series on cinematic, fine-art AI portraiture.',
+    'i12.desc':'Surreal floral still life where botanicals bloom into impossible arrangements — a fine-art piece for editorial use.',
+    'i13.desc':'Dreamlike composition in scarlet — a conceptual visual blending fashion and surrealism for a campaign teaser.',
+    'i14.desc':'Imagined cityscape rendered as a soft, dreamlike world — concept art exploring atmosphere and scale.',
+    'i15.desc':'Playful surrealist scene built on repeating polka motifs — an experimental piece on pattern and space.',
+    'i16.desc':'Majestic, otherworldly architecture reimagined with AI — a moody key visual for a narrative project.',
+    'svc.detail':'Service','svc.incl':'What’s included','svc.forlabel':'Ideal for','svc.more':'View detail','cta.inquire':'Inquire about this service','fm.prefill':'I’m interested in the service: ',
+    's1.long':'Scroll-stopping ad visuals built around your product, brand and target platform. From a single hero frame to a full set of variations for A/B testing, each creative is art-directed to convert — not just to look good.','s1.for':'brands running paid social on Instagram, Telegram or Meta.',
+    's2.long':'Dreamlike, editorial art that gives your brand a signature, impossible-to-ignore world. Perfect for campaigns, covers and launches that need to feel like fine art.','s2.for':'brands and artists who want a bold, distinctive identity.',
+    's3.long':'Photoreal interior and scene visuals generated on demand — explore palettes, moods and styling without a physical set or photoshoot.','s3.for':'interior, hospitality and product brands.',
+    's4.long':'Full model and product shoots produced entirely with AI — any look, location or styling, with no studio, casting or logistics.','s4.for':'beauty, fashion and product brands that need campaign imagery fast.',
+    's5.long':'Clear, on-brand visual data and explainer graphics that turn complex information into something elegant and easy to read.','s5.for':'brands communicating ingredients, results or process.',
+    's6.long':'Striking personal and brand portraits in any style — from clean editorial to painterly fine-art — to give you a premium, recognisable presence.','s6.for':'founders, creators and personal brands.',
+    's7.long':'Old, damaged or low-resolution photos restored, upscaled and enhanced to crisp, modern quality — with optional colourisation.','s7.for':'anyone with precious or archival photos to revive.',
+    's8.long':'Short-form AI video for ads, reels and product launches — motion that stops the scroll and brings your visuals to life.','s8.for':'brands launching products or growing on social.',
+    's9.long':'Cohesive visual worlds — moodboards, palettes and key art — that define how your brand looks and feels across every touchpoint.','s9.for':'new brands or rebrands that need a visual direction.',
+    's10.long':'Polished product renders and packaging visuals that present your product at its best, before it even exists physically.','s10.for':'product and packaging teams and e-commerce.'
   },
   cs:{
     'nav.home':'Domů','nav.services':'Služby','nav.work':'Práce','nav.about':'O mně','nav.contact':'Kontakt',
@@ -173,7 +201,35 @@ const I18N = {
     'cp.reach':'Spojte se přímo','cp.formt':'Pošlete zprávu',
     'fm.name':'Vaše jméno','fm.email':'E-mail','fm.msg':'Napište mi o svém projektu','fm.send':'Odeslat zprávu',
     'fm.note':'Tento demo formulář otevře váš e-mailový klient. Pro živý web jej napojte na preferovanou formulářovou službu.',
-    'modal.note':'Náhled videa — při spuštění nahraďte skutečným showreelem.'
+    'modal.note':'Náhled videa — při spuštění nahraďte skutečným showreelem.',
+    'wk.about':'O projektu',
+    'i1.desc':'AI produktový vizuál pro botanické pleťové sérum — aranžovaný flat-lay se sušenými růžemi a krystaly, vygenerovaný a vyretušovaný pro soft-luxury skincare značku.',
+    'i2.desc':'Hlavní záběr pro sérum s růží — postavený na svěží zahradní paletě bobulí a peckovin, aby evokoval přírodní, prémiové složení.',
+    'i3.desc':'Editorialní zátiší spojující sérum s vintage zrcadly a hedvábím — klíčový vizuál pro launch butikové skincare značky.',
+    'i4.desc':'Atmosférický produktový záběr na mokré břidlici — kontrast chladného kamene a teplé botaniky dodává řadě smyslový, spa dojem.',
+    'i5.desc':'Kompletní koncept social reklamy pro beauty drop — květinový klíčový snímek navržený pro placené kampaně na Instagramu a Telegramu.',
+    'i6.desc':'Reklamní kreativa pro parfém v chladných modrých tónech — čistá, na konverze zaměřená kompozice pro výkonnostní kampaně.',
+    'i7.desc':'AI vizualizace interiéru karmínového salonu — vygenerovaná na vyžádání pro hledání nálady a palety hospitality konceptu.',
+    'i8.desc':'Virtuální focení modelky v rosé paletě — celý editorialní look vytvořený čistě pomocí AI, bez studia.',
+    'i9.desc':'Infografika věrná značce, která mění produktová data v elegantní a snadno čitelný vizuál pro beauty maison.',
+    'i10.desc':'AI brand portrét s malířským, editorialním nádechem — pro výrazný, prémiový osobní brand zakladatelky.',
+    'i11.desc':'Tlumená portrétní studie pracující se světlem a náladou — část série o filmovém, fine-art AI portrétu.',
+    'i12.desc':'Surreální květinové zátiší, kde botanika rozkvétá do nemožných kompozic — fine-art kus pro editorialní použití.',
+    'i13.desc':'Snová kompozice v šarlatové — konceptuální vizuál spojující módu a surrealismus pro teaser kampaně.',
+    'i14.desc':'Imaginární panorama města jako měkký, snový svět — concept art zkoumající atmosféru a měřítko.',
+    'i15.desc':'Hravá surreální scéna postavená na opakujících se puntících — experimentální práce se vzorem a prostorem.',
+    'i16.desc':'Majestátní, nadpozemská architektura přetvořená pomocí AI — atmosférický klíčový vizuál pro narativní projekt.',
+    'svc.detail':'Služba','svc.incl':'Co je součástí','svc.forlabel':'Ideální pro','svc.more':'Zobrazit detail','cta.inquire':'Poptat tuto službu','fm.prefill':'Mám zájem o službu: ',
+    's1.long':'Vizuály, které zastaví scrollování, postavené na vašem produktu, značce a cílové platformě. Od jednoho hlavního záběru po celou sadu variant pro A/B testy — každá kreativa je art-directed tak, aby konvertovala, ne jen dobře vypadala.','s1.for':'značky s placenou inzercí na Instagramu, Telegramu nebo Meta.',
+    's2.long':'Snové, editorialní umění, které dá vaší značce signature svět, jenž nelze přehlédnout. Ideální pro kampaně, obálky a launche, které mají působit jako výtvarné umění.','s2.for':'značky a umělce, kteří chtějí odvážnou, osobitou identitu.',
+    's3.long':'Fotorealistické interiérové a scénické vizuály na vyžádání — zkoušejte palety, nálady a styling bez fyzické scény či focení.','s3.for':'interiérové, hospitality a produktové značky.',
+    's4.long':'Kompletní focení modelek a produktů vytvořené čistě pomocí AI — jakýkoli look, lokace či styling, bez studia, castingu a logistiky.','s4.for':'beauty, fashion a produktové značky, které potřebují kampaňové vizuály rychle.',
+    's5.long':'Přehledná vizuální data a vysvětlující grafika, která mění složité informace v něco elegantního a snadno čitelného.','s5.for':'značky komunikující složení, výsledky nebo postup.',
+    's6.long':'Výrazné osobní i firemní portréty v jakémkoli stylu — od čistého editorialu po malířský fine-art — pro prémiový, rozpoznatelný vzhled.','s6.for':'zakladatele, tvůrce a osobní značky.',
+    's7.long':'Staré, poškozené nebo nízkorozlišovací fotky obnovené, zvětšené a vylepšené do ostré, moderní kvality — volitelně s kolorováním.','s7.for':'kohokoli s cennými či archivními fotkami k oživení.',
+    's8.long':'Krátká AI videa pro reklamy, reels a launche produktů — pohyb, který zastaví scroll a oživí vaše vizuály.','s8.for':'značky uvádějící produkty nebo rostoucí na sociálních sítích.',
+    's9.long':'Soudržné vizuální světy — moodboardy, palety a klíčové vizuály — které definují, jak vaše značka vypadá a působí napříč všemi kanály.','s9.for':'nové značky nebo rebrandy hledající vizuální směr.',
+    's10.long':'Vyladěné produktové rendery a vizuály obalů, které představí váš produkt v nejlepším světle ještě předtím, než fyzicky existuje.','s10.for':'produktové a obalové týmy a e-shopy.'
   },
   uk:{
     'nav.home':'Головна','nav.services':'Послуги','nav.work':'Роботи','nav.about':'Про мене','nav.contact':'Контакти',
@@ -252,7 +308,35 @@ const I18N = {
     'cp.reach':'Звʼязатися напряму','cp.formt':'Надіслати повідомлення',
     'fm.name':'Ваше імʼя','fm.email':'Email','fm.msg':'Розкажіть про ваш проєкт','fm.send':'Надіслати',
     'fm.note':'Ця демо-форма відкриває ваш поштовий клієнт. Для живого сайту підключіть її до бажаного сервісу форм.',
-    'modal.note':'Превʼю відео — на запуску замініть справжнім showreel.'
+    'modal.note':'Превʼю відео — на запуску замініть справжнім showreel.',
+    'wk.about':'Про проєкт',
+    'i1.desc':'AI продуктовий візуал для ботанічної сироватки для обличчя — стилізований флетлей із сухими трояндами та кристалами, згенерований і відретушований для soft-luxury skincare бренду.',
+    'i2.desc':'Головний кадр для сироватки з трояндою — побудований на свіжій садовій палітрі ягід і кісточкових, щоб передати натуральний, преміальний склад.',
+    'i3.desc':'Editorial-натюрморт, що поєднує сироватку з вінтажними дзеркалами та шовком — ключовий візуал для запуску бутикового skincare бренду.',
+    'i4.desc':'Атмосферний продуктовий кадр на мокрому сланці — контраст холодного каменю й теплої ботаніки додає лінійці чуттєвого, spa-відчуття.',
+    'i5.desc':'Повний концепт social-реклами для beauty-дропу — квітковий ключовий кадр для платних кампаній в Instagram і Telegram.',
+    'i6.desc':'Рекламна креатива для парфуму в холодних синіх тонах — чиста, орієнтована на конверсію композиція для performance-кампаній.',
+    'i7.desc':'AI-візуалізація інтерʼєру багряного салону — згенерована на замовлення для пошуку настрою й палітри hospitality-концепту.',
+    'i8.desc':'Віртуальна зйомка моделі в rosé-палітрі — повний editorial-образ, створений суто за допомогою AI, без студії.',
+    'i9.desc':'Інфографіка у стилі бренду, що перетворює продуктові дані на елегантний і легкий для читання візуал для beauty-maison.',
+    'i10.desc':'AI бренд-портрет із живописним, editorial-фінішем — для виразної, преміальної присутності засновниці.',
+    'i11.desc':'Притемнене портретне дослідження світла й настрою — частина серії про кінематографічний, fine-art AI-портрет.',
+    'i12.desc':'Сюрреальний квітковий натюрморт, де ботаніка розквітає в неможливі композиції — fine-art робота для editorial-використання.',
+    'i13.desc':'Мрійлива композиція в багряному — концептуальний візуал, що поєднує моду й сюрреалізм для тизера кампанії.',
+    'i14.desc':'Уявна панорама міста як мʼякий, мрійливий світ — concept art, що досліджує атмосферу й масштаб.',
+    'i15.desc':'Грайлива сюрреальна сцена на основі повторюваних горохових мотивів — експериментальна робота з патерном і простором.',
+    'i16.desc':'Велична, неземна архітектура, переосмислена за допомогою AI — атмосферний ключовий візуал для наративного проєкту.',
+    'svc.detail':'Послуга','svc.incl':'Що входить','svc.forlabel':'Ідеально для','svc.more':'Детальніше','cta.inquire':'Замовити цю послугу','fm.prefill':'Мене цікавить послуга: ',
+    's1.long':'Візуали, що зупиняють скрол, побудовані навколо вашого продукту, бренду й цільової платформи. Від одного головного кадру до повного набору варіацій для A/B-тестів — кожна креатива зроблена так, щоб конвертувати, а не лише гарно виглядати.','s1.for':'бренди з платною рекламою в Instagram, Telegram чи Meta.',
+    's2.long':'Мрійливе, editorial-мистецтво, що дає вашому бренду фірмовий світ, який неможливо проігнорувати. Ідеально для кампаній, обкладинок і запусків, що мають відчуватися як мистецтво.','s2.for':'бренди й художників, які хочуть сміливу, особливу ідентичність.',
+    's3.long':'Фотореалістичні інтерʼєрні та сценічні візуали на замовлення — досліджуйте палітри, настрої й стайлінг без фізичної сцени чи зйомки.','s3.for':'інтерʼєрні, hospitality та продуктові бренди.',
+    's4.long':'Повні зйомки моделей і продуктів, створені суто за допомогою AI — будь-який образ, локація чи стайлінг, без студії, кастингу й логістики.','s4.for':'beauty, fashion і продуктові бренди, яким потрібні візуали швидко.',
+    's5.long':'Зрозумілі візуальні дані та пояснювальна графіка, що перетворює складну інформацію на щось елегантне й легке для читання.','s5.for':'бренди, що комунікують склад, результати чи процес.',
+    's6.long':'Виразні особисті та брендові портрети в будь-якому стилі — від чистого editorial до живописного fine-art — для преміального, впізнаваного вигляду.','s6.for':'засновників, творців і особисті бренди.',
+    's7.long':'Старі, пошкоджені чи низькоякісні фото, відновлені, збільшені й покращені до чіткої, сучасної якості — за бажанням із колоризацією.','s7.for':'будь-кого з цінними чи архівними фото для відновлення.',
+    's8.long':'Короткі AI-відео для реклами, reels і запусків продуктів — рух, що зупиняє скрол і оживляє ваші візуали.','s8.for':'бренди, що запускають продукти або ростуть у соцмережах.',
+    's9.long':'Цілісні візуальні світи — мудборди, палітри й ключові візуали — що визначають, як ваш бренд виглядає й відчувається в усіх точках контакту.','s9.for':'нові бренди чи ребрендинги, що шукають візуальний напрямок.',
+    's10.long':'Вишукані продуктові рендери та візуали упаковки, що показують ваш продукт у найкращому світлі ще до того, як він фізично існує.','s10.for':'продуктові та пакувальні команди й e-commerce.'
   }
 };
 
@@ -319,17 +403,24 @@ function buildLightbox(){
   lb.innerHTML=`<div class="lb-inner">
     <button class="lb-close" aria-label="Close">×</button>
     <button class="lb-nav lb-prev" aria-label="Previous">‹</button>
-    <img alt=""><div class="lb-cap"></div>
+    <img alt="">
+    <div class="lb-info">
+      <div class="lb-cap"></div>
+      <p class="lb-desc"></p>
+    </div>
     <button class="lb-nav lb-next" aria-label="Next">›</button></div>`;
   document.body.appendChild(lb);
-  const img=lb.querySelector('img'), cap=lb.querySelector('.lb-cap');
+  const img=lb.querySelector('img'), cap=lb.querySelector('.lb-cap'), desc=lb.querySelector('.lb-desc');
   let idx=0, last=null;
   const visible=()=> items.filter(el=> el.offsetParent!==null);
   function show(i){
     const list=visible(); if(!list.length) return;
     idx=(i+list.length)%list.length; const el=list[idx];
-    img.src=el.dataset.lb; img.alt=el.dataset.title||'';
-    cap.innerHTML=`${el.dataset.title||''} &nbsp;<em>${el.dataset.cat||''}</em>`;
+    const title=(el.querySelector('.meta h3')||{}).textContent||el.dataset.title||'';
+    const ccat=(el.querySelector('.meta span')||{}).textContent||el.dataset.cat||'';
+    img.src=el.dataset.lb; img.alt=title;
+    cap.innerHTML=`${title} &nbsp;<em>${ccat}</em>`;
+    desc.textContent = el.dataset.desckey ? t(el.dataset.desckey) : '';
   }
   function open(el){ last=document.activeElement; const list=visible(); show(list.indexOf(el)); lb.classList.add('open'); document.body.style.overflow='hidden'; lb.querySelector('.lb-close').focus(); }
   function close(){ lb.classList.remove('open'); document.body.style.overflow=''; if(last)last.focus(); }
@@ -366,6 +457,64 @@ function buildVideoModal(){
   m.querySelector('.modal-close').addEventListener('click',close);
   m.addEventListener('click',e=>{ if(e.target===m) close(); });
   document.addEventListener('keydown',e=>{ if(e.key==='Escape'&&m.classList.contains('open'))close(); });
+}
+
+/* ---------- Service detail modal ---------- */
+function buildServiceModal(){
+  const cards=[...document.querySelectorAll('[data-svc]')];
+  if(!cards.length) return;
+  const m=document.createElement('div'); m.className='modal svc-modal'; m.setAttribute('role','dialog'); m.setAttribute('aria-modal','true');
+  m.innerHTML=`<div class="svc-modal-box">
+    <button class="modal-close" aria-label="Close">×</button>
+    <span class="eyebrow svc-eyebrow"></span>
+    <h3 class="svc-modal-title"></h3>
+    <p class="svc-modal-desc"></p>
+    <h4 class="svc-modal-h" data-incl></h4>
+    <div class="pills svc-modal-incl"></div>
+    <p class="svc-modal-for"></p>
+    <a class="btn btn-primary svc-cta"></a>
+  </div>`;
+  document.body.appendChild(m);
+  const box=m.querySelector('.svc-modal-box');
+  const eb=m.querySelector('.svc-eyebrow'), ti=m.querySelector('.svc-modal-title'),
+        de=m.querySelector('.svc-modal-desc'), inclH=m.querySelector('[data-incl]'),
+        incl=m.querySelector('.svc-modal-incl'), forP=m.querySelector('.svc-modal-for'),
+        cta=m.querySelector('.svc-cta');
+  let last=null;
+  function open(card){
+    last=document.activeElement;
+    const id=card.dataset.svc; // e.g. "s1"
+    const no=(card.querySelector('.no')||{}).textContent||'';
+    eb.textContent=`✦ ${t('svc.detail')} ${no}`.trim();
+    ti.textContent=t(id+'.t');
+    de.textContent=t(id+'.long');
+    inclH.textContent=t('svc.incl');
+    incl.innerHTML=[1,2,3].map(n=>`<span class="pill">${t(id+'.t'+n)}</span>`).join('');
+    forP.innerHTML=`<strong>${t('svc.forlabel')}:</strong> ${t(id+'.for')}`;
+    cta.textContent=t('cta.inquire');
+    cta.href=`contact.html?s=${encodeURIComponent(t(id+'.t'))}`;
+    box.scrollTop=0;
+    m.classList.add('open'); document.body.style.overflow='hidden';
+    m.querySelector('.modal-close').focus();
+  }
+  function close(){ m.classList.remove('open'); document.body.style.overflow=''; if(last)last.focus(); }
+  cards.forEach(c=>{
+    c.addEventListener('click',e=>{ if(e.target.closest('a'))return; open(c); });
+    c.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); open(c); }});
+  });
+  m.querySelector('.modal-close').addEventListener('click',close);
+  m.addEventListener('click',e=>{ if(e.target===m) close(); });
+  document.addEventListener('keydown',e=>{ if(e.key==='Escape'&&m.classList.contains('open'))close(); });
+}
+
+/* ---------- Contact prefill from ?s= ---------- */
+function contactPrefill(){
+  const form=document.getElementById('contactForm'); if(!form)return;
+  const params=new URLSearchParams(location.search);
+  const s=params.get('s'); if(!s)return;
+  const msg=form.querySelector('#message');
+  if(msg && !msg.value){ msg.value=t('fm.prefill')+s; }
+  setTimeout(()=>{ try{ form.scrollIntoView({behavior:'smooth',block:'center'}); (form.querySelector('#name')||msg).focus(); }catch(e){} },200);
 }
 
 /* ---------- Portfolio filters ---------- */
@@ -411,7 +560,7 @@ function init(){
 
   try{ const s=localStorage.getItem('tp-lang'); if(s&&I18N[s]) lang=s; }catch(e){}
   applyLang();
-  buildFilters(); buildLightbox(); buildVideoModal(); reveal();
+  buildFilters(); buildLightbox(); buildVideoModal(); buildServiceModal(); contactPrefill(); reveal();
 }
 if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',init); else init();
 })();

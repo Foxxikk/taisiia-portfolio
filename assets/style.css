@@ -225,6 +225,28 @@ footer{border-top:1px solid var(--line);padding:54px 0 40px;background:var(--bg-
 .lb-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(253,250,248,.16);border:none;color:var(--cream);width:48px;height:48px;border-radius:50%;font-size:1.4rem;cursor:pointer;transition:background .25s}
 .lb-nav:hover{background:rgba(253,250,248,.3)}
 .lb-prev{left:-66px}.lb-next{right:-66px}
+.lb-info{text-align:center;max-width:600px}
+.lb-desc{color:#E8D7DA;font-size:.93rem;line-height:1.6;margin-top:10px}
+
+/* Service detail modal */
+.svc-card{cursor:pointer}
+.svc-card:focus-visible{outline:2px solid var(--rose);outline-offset:3px}
+.svc-more{display:inline-flex;align-items:center;gap:7px;margin-top:18px;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--rose-deep);font-weight:500}
+.svc-more::after{content:"→";transition:transform .25s var(--ease)}
+.svc-card:hover .svc-more::after{transform:translateX(4px)}
+.service[data-svc]{cursor:pointer}
+.service[data-svc]:focus-visible{outline:2px solid var(--rose);outline-offset:-2px}
+.svc-modal-box{background:var(--bg);color:var(--ink);border-radius:20px;max-width:560px;width:100%;max-height:88vh;overflow:auto;padding:44px 40px 40px;position:relative;box-shadow:var(--shadow-hover);text-align:left}
+.svc-modal-box .modal-close{position:absolute;top:14px;right:18px;color:var(--muted);font-size:1.7rem}
+.svc-modal-box .modal-close:focus-visible{outline:2px solid var(--rose);outline-offset:3px}
+.svc-eyebrow{color:var(--rose-deep)}
+.svc-modal-title{font-size:1.9rem;margin:12px 0 14px}
+.svc-modal-desc{color:var(--muted);font-size:1.02rem;line-height:1.6;margin-bottom:24px}
+.svc-modal-h{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);margin-bottom:12px}
+.svc-modal-incl{margin-bottom:24px}
+.svc-modal-for{color:var(--muted);font-size:.95rem;margin-bottom:28px}
+.svc-modal-for strong{color:var(--ink);font-weight:500}
+.svc-cta{width:100%;justify-content:center}
 
 /* Modal (video) */
 .modal{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;background:rgba(20,10,12,.82);backdrop-filter:blur(6px);padding:24px}
