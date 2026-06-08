@@ -364,7 +364,10 @@ function footerHTML(){
   return `<div class="wrap">
     <div class="foot">
       <div>
-        <a href="index.html" class="logo">Taisiia <span>Pokrovska</span></a>
+        <div class="foot-brand">
+          <img class="avatar foot-avatar" src="assets/img/taja-avatar.jpg" alt="Taisiia Pokrovska" loading="lazy" />
+          <a href="index.html" class="logo">Taisiia <span>Pokrovska</span></a>
+        </div>
         <p class="blurb" data-i18n="foot.blurb">${t('foot.blurb')}</p>
       </div>
       <div><h4 data-i18n="foot.explore">${t('foot.explore')}</h4><ul>${ex}</ul></div>
