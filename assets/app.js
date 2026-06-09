@@ -27,7 +27,7 @@ const I18N = {
     'wk.all':'View full portfolio',
     /* video */
     'vd.eyebrow':'✦ Motion','vd.title':'Video creatives & <em>surrealist visuals</em>',
-    'vd.lead':'AI-driven motion for ads, reels and dreamlike short films. Tap any frame to play.',
+    'vd.lead':'AI-driven motion for ads, reels and dreamlike short films. Tap any frame to play.','vd.tag':'AI Video','vd.tagS':'Surrealist',
     /* why */
     'wy.eyebrow':'✦ Why me','wy.title':'Why work <em>with me</em>',
     'f1.t':'Distinctive aesthetic','f1.d':'A signature soft-luxury look that elevates beauty and lifestyle brands.',
@@ -142,7 +142,7 @@ const I18N = {
     'wk.lead':'Náhled napříč kategoriemi — od reklamních kreativ po surreální světy.',
     'wk.all':'Celé portfolio',
     'vd.eyebrow':'✦ Pohyb','vd.title':'Video kreativy & <em>surrealistické vizuály</em>',
-    'vd.lead':'AI pohyb pro reklamy, reels a snové krátké filmy. Klepnutím na záběr přehrajete.',
+    'vd.lead':'AI pohyb pro reklamy, reels a snové krátké filmy. Klepnutím na záběr přehrajete.','vd.tag':'AI video','vd.tagS':'Surreální',
     'wy.eyebrow':'✦ Proč já','wy.title':'Proč pracovat <em>se mnou</em>',
     'f1.t':'Osobitá estetika','f1.d':'Signature soft-luxury vzhled, který pozvedne beauty a lifestyle značky.',
     'f2.t':'Rychlé dodání','f2.d':'Koncepty ve dnech, ne týdnech — bez kompromisu v kvalitě.',
@@ -249,7 +249,7 @@ const I18N = {
     'wk.lead':'Погляд крізь категорії — від рекламних креативів до сюрреальних світів.',
     'wk.all':'Усе портфоліо',
     'vd.eyebrow':'✦ Рух','vd.title':'Відеокреативи та <em>сюрреалістичні візуали</em>',
-    'vd.lead':'AI-рух для реклами, reels і мрійливих коротких фільмів. Торкніться кадру, щоб відтворити.',
+    'vd.lead':'AI-рух для реклами, reels і мрійливих коротких фільмів. Торкніться кадру, щоб відтворити.','vd.tag':'AI-відео','vd.tagS':'Сюрреалізм',
     'wy.eyebrow':'✦ Чому я','wy.title':'Чому варто працювати <em>зі мною</em>',
     'f1.t':'Особливий стиль','f1.d':'Фірмовий soft-luxury вигляд, що підносить beauty та lifestyle бренди.',
     'f2.t':'Швидка реалізація','f2.d':'Концепти за дні, а не тижні — без втрати якості.',
@@ -438,21 +438,30 @@ function buildLightbox(){
   document.addEventListener('keydown',e=>{ if(!lb.classList.contains('open'))return; if(e.key==='Escape')close(); if(e.key==='ArrowLeft')show(idx-1); if(e.key==='ArrowRight')show(idx+1); });
 }
 
-/* ---------- Video modal ---------- */
+/* ---------- Video modal (YouTube embed) ---------- */
 function buildVideoModal(){
   const vids=[...document.querySelectorAll('.vid')];
   if(!vids.length) return;
   const m=document.createElement('div'); m.className='modal'; m.setAttribute('role','dialog'); m.setAttribute('aria-modal','true');
-  m.innerHTML=`<div style="position:relative;max-width:760px;width:100%">
+  m.innerHTML=`<div style="position:relative;max-width:880px;width:100%">
     <button class="modal-close" aria-label="Close">×</button>
-    <div class="modal-box"><img alt=""><div class="ph-msg"><span class="star">✦</span>
-    <p class="serif" style="font-size:1.4rem;font-style:italic" class="mt"></p>
-    <p style="color:#C9B6BA;font-size:.85rem;margin-top:10px" data-i18n="modal.note">${t('modal.note')}</p></div></div></div>`;
+    <div class="modal-box"></div></div>`;
   document.body.appendChild(m);
-  const mImg=m.querySelector('img'), mt=m.querySelector('.serif');
+  const box=m.querySelector('.modal-box');
   let last=null;
-  function open(v){ last=document.activeElement; mt.textContent=v.dataset.title||'Showreel'; mImg.src=v.querySelector('img').src; m.classList.add('open'); document.body.style.overflow='hidden'; m.querySelector('.modal-close').focus(); }
-  function close(){ m.classList.remove('open'); document.body.style.overflow=''; if(last)last.focus(); }
+  function open(v){
+    last=document.activeElement;
+    const yt=v.dataset.yt;
+    const title=(v.dataset.title||'Video').replace(/"/g,'');
+    if(yt){
+      box.innerHTML=`<iframe src="https://www.youtube-nocookie.com/embed/${yt}?autoplay=1&rel=0&modestbranding=1&playsinline=1" title="${title}" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`;
+    } else {
+      const src=(v.querySelector('img')||{}).src||'';
+      box.innerHTML=`<img alt="" src="${src}"><div class="ph-msg"><span class="star">✦</span><p class="serif" style="font-size:1.4rem;font-style:italic">${title}</p><p style="color:#C9B6BA;font-size:.85rem;margin-top:10px">${t('modal.note')}</p></div>`;
+    }
+    m.classList.add('open'); document.body.style.overflow='hidden'; m.querySelector('.modal-close').focus();
+  }
+  function close(){ m.classList.remove('open'); document.body.style.overflow=''; box.innerHTML=''; if(last)last.focus(); }
   vids.forEach(v=>{
     v.addEventListener('click',()=>open(v));
     v.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); open(v); }});
